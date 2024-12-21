@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Invoicer</title>
+        <link rel="stylesheet" href="/web/home/home.css">
+        <script src="/web/home/home.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Invoicer</h1>
+            <ul class="viewnav">
+                <li><a href="">Edit</a></li>
+                <li><a href="">PDF View</a></li>
+            </ul>
+        <div id="custsidebar" class="custsidebar">
+            <div class="sidebarcontent">  
+                <div class="largetext">Customer Info</div>
+                <br><br>
+                <input type="text" id="cust" placeholder="Look Up Customer">
+                <br><br>
+                <label for="custname">Name:</label>
+                <div></div>
+                <input type="text" id="custname" name="custname">
+                <br><br>
+                <label for="custphone">Phone</label>
+                <div></div>
+                <input type="tel" id="custphone" name="custphone">
+                <br><br>
+                <label for="custemail">Email</label>
+                <div></div>
+                <input type="email" id="custemail" name="custemail">
+                <br><br>
+                <label for="custaddress">Addres</label>
+                <div></div>
+                <input type="text" id="custaddress" name="custaddress">
+                <div></div>
+                <input type="text" id="custcity" name="custcity">
+            </div>
+        </div>
+        <h2 class="estinv">
+            <div class="comp">
+                <ul class="companyinfo">
+                    <li class="inv">Invoice</li>
+                    <li>company</li>
+                    <li>company@info.com</li>
+                    <li>555-555-5555</li>
+                </ul>
+            
+                <div class="logo">Company Logo</div>
+            </div>
+            <div class="billing">
+                <ul class="billinginfo">
+                    <li class="cust">Bill to:</li>
+                    <li>
+                        <input type="button" value="Add Customer" id="addcust" onclick="opensidebar()">
+                    </li>
+                </ul>
+                <ul class="invinfo">
+                    <li>
+                        <label>Invoice #:</label>
+                        <input type="number" id="invnum" name="invnum">
+                    </li>
+                    <li>
+                        <label>Invoice Date:</label>
+                        <input type="date" id="invdate" name="invdate">
+                    </li>
+                    <li>
+                        <label>Due Date:</label>
+                        <input type="date" id="invduedate" name="invduedate">
+                    </li>
+                </ul>
+            </div>
+            <div class="itms">
+                <table id="items">
+                    <tr>
+                        <th class="itemnum"></th>
+                        <th class="itemdescription">Description:</th>
+                        <th class="itemmaterial">Material:</th>
+                        <th class="itemlabor">Labor:</th>
+                        <th class="itemtotal">Total:</th>
+                        <th class="itemlincl">*</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <textarea type="text" name="descln1" id="descln1" rows="1"></textarea>
+                        </td>
+                        <td>
+                            <input type="number" id="matln1" name="matln1">
+                        </td>
+                        <td>
+                            <input type="number" id="labln1" name="labln1"></textarea>
+                        </td>
+                        <td>
+                            <input type="number" id="totln1" name="totln1"></textarea>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="linclln1" name="linclln1">
+                        </td>
+                    </tr>    
+            </table>
+            </div>
+            <input type="button" value= "Add Line" id="addline" name="addline">
+        </h2>
+    
+
+        </div>
+    </body>
+</html>

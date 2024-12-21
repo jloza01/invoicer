@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+}
+h1 {
+    color: Blue;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.viewnav {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #DDDDDD;
+  }
+.viewnav li {
+    padding-top: 10px;
+    width: 25%;
+}
+.viewnav a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 8px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease;
+  }
+.viewnav a:hover {
+    background-color: #929292;
+  }
+.viewnav a:active { /*need to come back to this to add functionality*/
+    background-color: #929292;
+  }
+
+.estinv {
+    border: 1px solid black;
+    padding: 30px;
+    transition: margin-left 0.3s ease; /* Smooth transition for content movement */
+}
+.custsidebar {
+    position: fixed;
+    right: -400px; /* Hide the sidebar off-screen */
+    width: 400px;
+    height: 100%;
+    background-color: rgb(226, 226, 226);
+    color: black;
+    transition: right 0.5s ease; /* Smooth transition */
+    padding: 0px;
+    
+}
+.sidebarcontent{
+    padding:20px
+}
+.custsidebar.active {
+    right: 0; /* Move sidebar into view */
+}
+div.largetext{
+    font-size: 30px;
+    text-align: center;
+}
+
+.estinv.active {
+    background-color: #929292;
+    margin-right: 400px; /* Move content when sidebar is open */
+}
+div.comp{
+    list-style-type: none;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+}
+div.logo {
+    border: 1px solid black;
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 45px;
+}
+.companyinfo {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 10px;
+}
+.inv {
+    font-size: 45px;
+}
+div.billing {
+    border: 1px solid black;
+    list-style-type: none;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    padding-top: 50px;
+}
+.billinginfo {
+    padding-left: 0;
+    list-style-type: none;
+}
+.invinfo {
+    padding-left: 0;
+    list-style-type: none;
+}
+div.itms {
+    list-style-type: none;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+}
+table{
+    width:100%;
+    border: 1px solid #000000;
+    padding-left: 0;
+}
+.itemnum{
+    width: 2%;
+}
+.itemdescription{
+    text-align:left;
+    width: 47%;
+}
+.itemmaterial{
+    text-align: center;
+    width: 15%;
+}
+.itemlabor{
+    text-align: center;
+    width: 15%;
+}
+.itemtotal{
+    text-align: center;
+    width: 15%;
+}
+.itemlincl{
+    width: 2%;
+}
+table td {
+    border: 1px solid black;
+}
+table td input[type="number"] {
+
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: medium;
+}
+textarea{
+    font-family: arial;
+    font-size: medium;
+    box-sizing: border-box;
+    width: 100%;
+    text-wrap: hard;
+    resize: none;
+    margin-top: 10px;
+   
+    
+    max-height: min-content;
+}
