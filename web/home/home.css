@@ -151,6 +151,13 @@ table td input[type="number"] {
     box-sizing: border-box;
     font-family: arial;
     font-size: medium;
+    outline: none;
+    border: transparent;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 textarea{
     font-family: arial;
@@ -160,6 +167,8 @@ textarea{
     text-wrap: hard;
     resize: none;
     margin-top: 10px;
+    outline: none;
+    border: transparent;
    
     
     max-height: min-content;
